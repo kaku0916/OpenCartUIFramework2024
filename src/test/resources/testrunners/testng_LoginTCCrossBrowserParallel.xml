@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Open Cart Regression Suite" verbose="3" thread-count="5" parallel="tests">
+<listeners>
+		<listener
+			class-name="com.qa.opencart.listeners.ExtentReportListener" />
+	</listeners>
+	<test name="Login Page Test chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.opencart.test.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Login Page Test edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+			<class name="com.qa.opencart.test.LoginPageTest" />
+		</classes>
+	</test>
+	
+	<test name="Login Page Test firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="com.qa.opencart.test.LoginPageTest" />
+		</classes>
+	</test>
+	
+</suite>
