@@ -28,7 +28,7 @@ public class RegisteratioPage {
 
 	private By logoutLink = By.linkText("Logout");
 	private By registerLink = By.linkText("Register");
-	private By pop = By.linkText("pop");
+	private By kalu = By.linkText("kalu");
 
 	// public page Class Constructor
 	public RegisteratioPage(WebDriver driver) {

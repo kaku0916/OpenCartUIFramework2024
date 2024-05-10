@@ -62,6 +62,7 @@ public class ProductInfoPage {
 //	Ex Tax: $2,000.00
 	
 	public void getProductPricingData() {
+		System.out.println("Rohit");
 		List<WebElement> PriceList=eliUtil.getElements(productPriceData);
 		String price=PriceList.get(0).getText();
 		String extTaxPrice=PriceList.get(1).getText().split(":")[1].trim();
