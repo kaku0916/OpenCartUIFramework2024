@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import com.qa.opencart.logs.Log;
 
+
 public class OptionsManager {
 	private Properties prop;
 	private ChromeOptions co;

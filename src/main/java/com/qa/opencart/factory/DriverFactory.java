@@ -14,11 +14,11 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.safari.SafariDriver;
-
 import com.qa.opencart.errors.AppError;
 import com.qa.opencart.exceptions.BrowserException;
 import com.qa.opencart.exceptions.FrameworkException;
 import com.qa.opencart.logs.Log;
+
 
 public class DriverFactory {
 
