@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.qa.opencart.constants.AppConstants;
-import com.qa.opencart.logs.MyLog;
+import com.qa.opencart.logger.Log;
 import com.qa.opencart.utils.ElementUtil;
 import com.qa.opencart.utils.TimeUtil;
 
@@ -33,7 +33,7 @@ public class LoginPage {
 		String title =eliUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_TITLE, TimeUtil.DEFAULT_MEDIUM_TIME);
 		//String pageTitle=driver.getTitle();	
 		//System.out.println("Page Title is " + title);
-		MyLog.info("Page Title is " + title);
+		Log.info("Page Title is " + title);
 		return title;
 	}
 	@Step("Getting login page URL")
@@ -41,7 +41,7 @@ public class LoginPage {
 		String url =eliUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL_FRACTION, TimeUtil.DEFAULT_MEDIUM_TIME);
 		//String acturl = driver.getCurrentUrl();
 		//System.out.println("Page Url " + url);
-		MyLog.info("Page Url " + url);
+		Log.info("Page Url " + url);
 		return url;
 	}
 	@Step("Getting the status of forgot pass link")
@@ -52,7 +52,7 @@ public class LoginPage {
      @Step("Login with username {0} and password {1}")
 	public AccountsPage doLogin(String username, String pwd) {
 		//System.out.println("User Credentials :" +username+" :"+pwd);
-		MyLog.info("User Credentials :" +username+" :"+pwd);
+		Log.info("User Credentials :" +username+" :"+pwd);
 		eliUtil.waitForElementVisible(emaiId, TimeUtil.DEFAULT_LONG_TIME).sendKeys(username);
 		eliUtil.doSendKeys(password, pwd);
 		eliUtil.doClick(loginButton);
