@@ -6,7 +6,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
-import com.qa.opencart.logs.Log;
+import com.qa.opencart.logs.MyLog;
 
 
 public class OptionsManager {
@@ -24,12 +24,12 @@ public class OptionsManager {
 
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
 			//System.out.println("Running chrome in headless mode");
-			Log.info("Running chrome in headless mode");
+			MyLog.info("Running chrome in headless mode");
 			co.addArguments("--headless");
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
 			//System.out.println("Running chrome in incognito mode");
-			Log.info("Running chrome in incognito mode");
+			MyLog.info("Running chrome in incognito mode");
 			co.addArguments("--incognito");
 		}
 		return co;
@@ -40,12 +40,12 @@ public class OptionsManager {
 
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
 			//System.out.println("Running Edge in headless mode");
-			Log.info("Running Edge in headless mode");
+			MyLog.info("Running Edge in headless mode");
 			eo.addArguments("--headless");
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
 			//System.out.println("Running Edge in incognito mode");
-			Log.info("Running Edge in incognito mode");
+			MyLog.info("Running Edge in incognito mode");
 			eo.addArguments("--inprivate");
 		}
 		return eo;
@@ -56,12 +56,12 @@ public class OptionsManager {
 
 		if (Boolean.parseBoolean(prop.getProperty("headless").trim())) {
 			//System.out.println("Running Firefox in headless mode");
-			Log.info("Running Firefox in headless mode");
+			MyLog.info("Running Firefox in headless mode");
 			fo.addArguments("--headless");
 		}
 		if (Boolean.parseBoolean(prop.getProperty("incognito").trim())) {
 			//System.out.println("Running Firefox in incognito mode");
-			Log.info("Running Firefox in incognito mode");
+			MyLog.info("Running Firefox in incognito mode");
 			fo.addArguments("--incognito");
 		}
 		return fo;

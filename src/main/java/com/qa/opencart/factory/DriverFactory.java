@@ -17,7 +17,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import com.qa.opencart.errors.AppError;
 import com.qa.opencart.exceptions.BrowserException;
 import com.qa.opencart.exceptions.FrameworkException;
-import com.qa.opencart.logs.Log;
+import com.qa.opencart.logs.MyLog;
 
 
 public class DriverFactory {
@@ -33,7 +33,7 @@ public class DriverFactory {
 		String browserName = prop.getProperty("browser");
 		//String browserName=System.getProperty("browser");
 		//System.out.println("Browser Name is " + browserName);
-		Log.info("Browser Name is " + browserName);
+		MyLog.info("Browser Name is " + browserName);
 		highlight = prop.getProperty("highlight");
 		optionsManager = new OptionsManager(prop);
 		switch (browserName.toLowerCase().trim()) {
@@ -56,7 +56,7 @@ public class DriverFactory {
 
 		default:
 			//System.out.println("Please pass the right Browser....." + browserName);
-			Log.error("Please pass the right Browser....." + browserName);
+			MyLog.error("Please pass the right Browser....." + browserName);
 			throw new BrowserException("No Browser Found.." + browserName);
 		}
 
