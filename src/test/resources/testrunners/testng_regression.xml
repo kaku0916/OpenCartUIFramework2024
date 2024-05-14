@@ -19,6 +19,19 @@
 			<class name="com.qa.opencart.test.LoginPageTest" />
 		</classes>
 	</test>
+	<test name="Accounts Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.opencart.test.AccountsPageTest" />
+		</classes>
+	</test>
+
+	<test name="ProductInfo Page Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.qa.opencart.test.ProductInfoPageTest" />
+		</classes>
+	</test>
 
 	<!--<test name="Login Page Test edge">
 		<parameter name="browser" value="edge"></parameter>
@@ -34,26 +47,14 @@
 		</classes>
 	</test>-->
 
-	<!--<test name="Accounts Page Test">
-		<parameter name="browser" value="firefox"></parameter>
-		<classes>
-			<class name="com.qa.opencart.test.AccountsPageTest" />
-		</classes>
-	</test>-->
 
 	<!--<test name="Search Result Page Test">
 		<parameter name="browser" value="chrome"></parameter>
 		<classes>
 			<class name="com.qa.opencart.test.SearchResultsPageTest" />
 		</classes>
-	</test>
-	
-	<test name="ProductInfo Page Test">
-		<parameter name="browser" value="edge"></parameter>
-		<classes>
-			<class name="com.qa.opencart.test.ProductInfoPageTest" />
-		</classes>
 	</test>-->
+
 
 	<!--<test name="Registeration Page Test">
 		<parameter name="browser" value="chrome"></parameter>
