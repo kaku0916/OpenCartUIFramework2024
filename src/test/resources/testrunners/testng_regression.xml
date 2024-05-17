@@ -13,7 +13,7 @@
 			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 	</listeners>
 
-	<test name="Login Page Test chrome">
+	<test name="Login Page Test chrome_123">
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="browserversion" value="124"></parameter>
 		<parameter name="testname" value="OpenCart-Login Page Test" />
@@ -41,7 +41,7 @@
 		</classes>
 	</test>
 
-	<test name="ProductInfo Page Test">
+	<test name="ProductInfo Page Test_chrome123">
 		<parameter name="browser" value="chrome"></parameter>
 		<parameter name="browserversion" value="123"></parameter>
 		<parameter name="testname"
